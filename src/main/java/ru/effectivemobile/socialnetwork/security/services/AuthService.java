@@ -16,7 +16,6 @@ import ru.effectivemobile.socialnetwork.security.dto.response.NewTokensResponse;
 import ru.effectivemobile.socialnetwork.security.dto.request.UpdateTokenRequest;
 import ru.effectivemobile.socialnetwork.security.jwt.JwtUtils;
 import ru.effectivemobile.socialnetwork.security.model.RefreshToken;
-import ru.effectivemobile.socialnetwork.security.repository.RoleRepository;
 import ru.effectivemobile.socialnetwork.repository.UserRepository;
 import ru.effectivemobile.socialnetwork.security.model.ERole;
 
@@ -27,7 +26,6 @@ public class AuthService {
 
     private final RefreshTokenService refreshTokenService;
     private final UserRepository userRepository;
-    private final RoleRepository roleRepository;
     private final UserMapper userMapper;
 
     private final AuthenticationManager authenticationManager;
